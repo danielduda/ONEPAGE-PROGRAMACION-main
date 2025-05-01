@@ -17,13 +17,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 
-<!--lINK DEL SERVICIO DE EMAILJS QUE PERMITE ENVIAR EMAILS SIN NODEJS-->
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script>
-  (function() {
-    emailjs.init("lvYbcWVZ5HX3YVOI_"); // Reemplaza con tu User ID de EmailJS
-  })();
-</script>
+    <!--lINK DEL SERVICIO DE EMAILJS QUE PERMITE ENVIAR EMAILS SIN NODEJS-->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("lvYbcWVZ5HX3YVOI_"); // Reemplaza con tu User ID de EmailJS
+        })();
+    </script>
 
 
 </head>
@@ -46,22 +46,26 @@
 
                 <!-- Lista de Enlaces -->
                 <ul id="nav-links">
-                    <a href="#exposiciones">
-                        <button id="plan-bton" class="bton">PLANES</button></a>
+                    <a href="#exposiciones"> <button id="plan-bton" class="bton">PLANES</button></a>
+                    
                     <li><a href="html/nosotros.html" target="_blank">Nosotros</a></li>
                     <li><a href="html/servicios.html" target="_blank">Servicios</a></li>
                     <li><a href="html/proyectos.html" target="_blank">Proyectos</a></li>
 
+
+                    <li class="social">
+                        <a href="https://api.whatsapp.com/send/?phone=5491127393676&text=Hola%2C+Equigesti%C3%B3n%21+Quisiera+obtener+m%C3%A1s+informaci%C3%B3n+sobre+sus+planes+y+servicios.&type=phone_number&app_absent=0" target="_blank">
+                            <i class="fab fa-whatsapp" style="color: #25D366;"></i>
+                        </a>
+                        <a href="https://www.instagram.com/xgestion/" target="_blank">
+                            <i class="fa-brands fa-instagram" style="color: #E4405F;"></i>
+                        </a>
+                    </li>
+
                 </ul>
 
             </nav>
-            <div class="social">
-                <a
-                    href="https://api.whatsapp.com/send/?phone=5491127393676&text=Hola%2C+Equigesti%C3%B3n%21+Quisiera+obtener+m%C3%A1s+informaci%C3%B3n+sobre+sus+planes+y+servicios.&type=phone_number&app_absent=0"><i
-                        class="fab fa-whatsapp" style="color: #25D366;"></i></a>
-                <a href="https://www.instagram.com/xgestion/"><i class="fa-brands fa-instagram"
-                        style="color: #E4405F;"></i></a>
-            </div>
+          
 
         </header>
 
@@ -71,15 +75,67 @@
             <section>
 
 
-                <div class="carousel-item active">
-                    <img src="./img/Progra1.jpeg" class="d-block w-100" alt="Imagen 1">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <h2>¿Cuántas ventas perdés por no tener un sitio web?</h2>
-                        <p>Diseño de sitio web con estrategia para empresas, pymes, comerciantes</p>
-                        <a href="#contact-form" class="btn btn-primary">Quiero saber más</a>
-                    </div>
-                </div>
+                <!-- INICIO DEL CARRUSEL -->
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 
+                    <!-- Indicadores (los puntitos) -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+
+                    <!-- Slides -->
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <img src="./img/Progra1.jpeg" class="d-block w-100" alt="Imagen 1">
+                            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                <h2>¡TU NEGOCIO NECESITA UNA WEB!</h2>
+                                <p align="center" class="texto-carrusel">Construí tu sitio con nosotros y abrí las puertas a nuevas oportunidades.</p>
+                                
+                                <a href="#contact-form" class="btn btn-primary">Contáctanos</a>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="./img/Progra1.jpeg" class="d-block w-100" alt="Imagen 2">
+                            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                <h2>POTENCIA LA IMAGEN DE TU EMPRESA-MARCA</h2>
+                                <p align="center" class="texto-carrusel">Obtené diseños WEB 100% personalizados y profesionales, ¡destaca del resto!</p>
+                                <a href="#contact-form" class="btn btn-success">Contáctanos</a>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="./img/Progra1.jpeg" class="d-block w-100" alt="Imagen 3">
+                            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                <h2>TRANSFORMÁ TU PRESENCIA ONLINE</h2>
+                                <p align="center" class="texto-carrusel">Empezá a impulsar tu éxito digital ahora.</p>
+
+                                <a href="#contact-form" class="btn btn-warning">Contáctanos</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Botones de navegación -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+
+                </div>
+                <!-- FIN DEL CARRUSEL -->
 
 
             </section>
@@ -102,7 +158,7 @@
                         </div>
                         <div class="info">
                             <i class="fa-solid fa-dollar-sign"></i>
-                            <span><del>ARS 285.999</del><mark style="background-color: red;"> 40% OFF</mark></span>
+                            <span><del>ARS 285.999</del><mark style="background-color: red; color:white;"> 40% OFF</mark></span>
                             <h2 class="color-precio">AR$ 199.999</h2>
                         </div>
                         <div class="info">
@@ -113,7 +169,7 @@
                                 la conversión (UX/UI)<br>Carga rápida y optimización SEO básica
                             </p>
                         </div>
-                        <button data-bs-toggle="modal" data-bs-target="#staticBackdrop">Continuar </button>
+                        <button data-bs-toggle="modal" data-bs-target="#staticBackdrop" >Continuar </button>
 
                     </div>
                     <div class="col">
@@ -254,14 +310,15 @@
         </div>
 
 
-        <h2 class= "titulo-seccion text-white">CONTÁCTANOS</h2>
-      <br><br>
+        <h2 class="titulo-seccion text-white">CONTÁCTANOS</h2>
+        <br><br>
 
         <form id="contact-form">
             <input type="text" name="name" placeholder="Tu nombre" required />
             <input type="email" name="email" placeholder="Tu correo" required />
             <textarea name="message" placeholder="Tu mensaje" required></textarea>
-            <button type="submit">Enviar</button>
+            <button type="submit" id="plan-bton" class="bton">Enviar</button>
+           
         </form>
 
 
